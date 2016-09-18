@@ -20,6 +20,8 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <!-- ANIJS animations -->
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -33,27 +35,27 @@
 <body>
 
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle" data-anijs="if: mouseover, do: pulse animated"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-                    <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>Adam Siwiec</a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$( "#menu-close").click();>Adam Siwiec</a>
             </li>
             <!--<li>
                 <a href="#top" onclick=$("#menu-close").click();>Home</a>
             </li>-->
             <li>
-                <a href="#about" onclick=$("#menu-close").click();>About</a>
+                <a href="#about" onclick=$( "#menu-close").click();>About</a>
             </li>
             <li>
-                <a href="#services" onclick=$("#menu-close").click();>What I Do</a>
+                <a href="#services" onclick=$( "#menu-close").click();>What I Do</a>
             </li>
             <li>
-                <a href="#portfolio" onclick=$("#menu-close").click();>Projects</a>
+                <a href="#portfolio" onclick=$( "#menu-close").click();>Projects</a>
             </li>
             <li>
-                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+                <a href="#contact" onclick=$( "#menu-close").click();>Contact</a>
             </li>
         </ul>
     </nav>
@@ -64,7 +66,7 @@
             <h1>Adam Siwiec</h1>
             <h3>Full Stack Developer &amp; Student</h3>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">About me</a>
+            <a href="#about" class="btn btn-dark btn-lg" data-anijs="if: mouseover, do: pulse animated">About me</a>
         </div>
     </header>
 
@@ -93,8 +95,8 @@
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
+                            <div class="service-item" >
+                                <span class="fa-stack fa-4x" data-anijs="if: mouseover, do: bounce animated">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-user fa-stack-1x text-primary"></i>
                             </span>
@@ -107,7 +109,7 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="fa-stack fa-4x">
+                                <span class="fa-stack fa-4x" data-anijs="if: mouseover, do: bounce animated">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-align-justify fa-stack-1x text-primary"></i>
                             </span>
@@ -119,8 +121,8 @@
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
+                            <div class="service-item" >
+                                <span class="fa-stack fa-4x" data-anijs="if: mouseover, do: bounce animated">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-link fa-stack-1x text-primary"></i>
                             </span>
@@ -133,7 +135,7 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="fa-stack fa-4x">
+                                <span class="fa-stack fa-4x" data-anijs="if: mouseover, do: bounce animated">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-mobile fa-stack-1x text-primary"></i>
                             </span>
@@ -171,21 +173,22 @@
                     <div class="row">
 
                         <div class="col-md-6">
-                            <div class="portfolio-item">
+                            <div class="portfolio-item" data-anijs="if: scroll, on: window, do: slideInLeft animated, before: scrollReveal">
+
                                 <a href="#">
                                     <img class="img-portfolio img-responsive" src="img/mow.png">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="portfolio-item">
+                            <div class="portfolio-item" data-anijs="if: scroll, on: window, do: slideInRight animated, before: scrollReveal">
                                 <a href="#">
                                     <img class="img-portfolio img-responsive" src="img/tag.png">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="portfolio-item">
+                            <div class="portfolio-item" data-anijs="if: scroll, on: window, do: slideInLeft animated, before: scrollReveal">
                                 <a href="#">
                                     <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
 
@@ -193,7 +196,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="portfolio-item">
+                            <div class="portfolio-item" data-anijs="if: scroll, on: window, do: slideInRight animated, before: scrollReveal">
                                 <a href="#">
                                     <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
                                 </a>
@@ -216,7 +219,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h3>Lets talk! I really like meeting new people.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+                    <a href="#" class="btn btn-lg btn-light" data-anijs="if: scroll, on: window, do: tada animated, before: scrollReveal">Click Me!</a>
                 </div>
             </div>
         </div>
@@ -229,11 +232,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4 class ="text-center"><strong>Adam Siwiec</strong>
+                    <h4 class="text-center"><strong>Adam Siwiec</strong>
                     </h4>
-                    <p class ="text-center">AR, USA</p>
+                    <p class="text-center">AR, USA</p>
                     <ul class="list-unstyled">
-                        <li class ="text-center"><i class="fa fa-phone fa-fw"></i> 4796442578</li>
+                        <li class="text-center"><i class="fa fa-phone fa-fw"></i> 4796442578</li>
                         <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:adamsiwiec01@gmail.com">adamsiwiec01@gmail.com</a>
                         </li>
                     </ul>
@@ -245,7 +248,7 @@
                         <li>
                             <a href="https://twitter.com/asiwiec1"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
                         </li>
-                    <!--    <li>
+                        <!--    <li>
                             <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
                         </li> -->
                     </ul>
@@ -266,60 +269,63 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- ANIJS -->
+    <script src="js/anijs-min.js"></script>
+    <script src="js/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
+        // Closes the sidebar menu
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        // Opens the sidebar menu
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        // Scrolls to the selected menu item on the page
+        $(function() {
+            $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+        //#to-top button appears after scrolling
+        var fixed = false;
+        $(document).scroll(function() {
+            if ($(this).scrollTop() > 250) {
+                if (!fixed) {
+                    fixed = true;
+                    // $('#to-top').css({position:'fixed', display:'block'});
+                    $('#to-top').show("slow", function() {
+                        $('#to-top').css({
+                            position: 'fixed',
+                            display: 'block'
+                        });
+                    });
+                }
+            } else {
+                if (fixed) {
+                    fixed = false;
+                    $('#to-top').hide("slow", function() {
+                        $('#to-top').css({
+                            display: 'none'
+                        });
+                    });
                 }
             }
         });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-</script>
+    </script>
 
 </body>
 
