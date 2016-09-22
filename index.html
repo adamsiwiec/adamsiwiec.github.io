@@ -9,11 +9,11 @@
     <meta name="description" content="Adam's portfolio website">
     <meta name="author" content="Adam Siwiec">
 
-<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffffff">
     <title>Adam Siwiec - Full Stack Developer</title>
 
     <!-- Bootstrap Core CSS -->
@@ -25,7 +25,7 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <!-- ANIJS animations -->
+    <!-- ANIJS animations -->
     <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -70,13 +70,14 @@
 
     <!-- Header -->
     <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Adam Siwiec</h1>
-            <h3>Full Stack Developer &amp; Student</h3>
+        <div class="text-vertical-center" >
+            <h1 data-anijs="if: DOMContentLoaded, on: document, do: fadeInDown animated">Adam Siwiec</h1>
+            <h3 data-anijs="if: DOMContentLoaded, on: document, do: fadeInDown animated">Full Stack Developer &amp; Student</h3>
             <br>
+            <div data-anijs="if: DOMContentLoaded, on: document, do: fadeInDown animated">
             <a href="#about" class="btn btn-dark btn-lg" data-anijs="if: mouseover, do: pulse animated">About me</a>
             <a href="https://adamsiwiec.github.io/blog" class="btn btn-dark btn-lg" data-anijs="if: mouseover, do: pulse animated">My Blog</a>
-
+            <div>
         </div>
     </header>
 
@@ -85,9 +86,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <img class="center-block img-responsive" src="img/me.jpg">
-                    <h2>Hey, I am Adam and I like to program</h2>
-                    <p class="lead">I've created lots of amazing <a href="#portfolio"> things </a>that showcase my work</p>
+                    <img data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal" class="center-block img-responsive" src="img/me.jpg">
+                    <h2 data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal">Hey, I am Adam and I like to program</h2>
+                    <p data-anijs="if: scroll, on: window, do: fadeInUp animated, before: scrollReveal" class="lead">I've created lots of amazing <a href="#portfolio"> things </a>that showcase my work</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -105,7 +106,7 @@
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
-                            <div class="service-item" >
+                            <div class="service-item">
                                 <span class="fa-stack fa-4x" data-anijs="if: mouseover, do: bounce animated">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-user fa-stack-1x text-primary"></i>
@@ -131,7 +132,7 @@
                             </div>
                         </div>
                         <div class="col-md-3 col-sm-6">
-                            <div class="service-item" >
+                            <div class="service-item">
                                 <span class="fa-stack fa-4x" data-anijs="if: mouseover, do: bounce animated">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-link fa-stack-1x text-primary"></i>
