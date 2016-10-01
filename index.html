@@ -9,18 +9,17 @@
     <meta name="description" content="Adam's portfolio website">
     <meta name="author" content="Adam Siwiec">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="dist/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="dist/img/favicon-16x16.png" sizes="16x16">
     <meta name="theme-color" content="#ffffff">
     <title>Adam Siwiec - Full Stack Developer</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/boot/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="dist/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -79,9 +78,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center myinfo">
-                    <img class="center-block img-responsive" src="img/me.jpg">
+                    <img class="center-block img-responsive" src="dist/img/me.jpg">
                     <h2>Hey, I am Adam and I like to program</h2>
-                    <p>I've created lots of amazing <a href="#portfolio"> things </a>that showcase my work</p>
+                    <p class="lead">I've created lots of amazing <a href="#portfolio"> things </a>that showcase my work</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -180,21 +179,21 @@
                             <div class="portfolio-item">
 
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/mow.jpg">
+                                    <img class="img-portfolio img-responsive" src="dist/img/mow.jpg">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6 project">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/tag.png">
+                                    <img class="img-portfolio img-responsive" src="dist/img/tag.png">
                                 </a>
                             </div>
                         </div>
                         <div class="col-md-6 project">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                    <img class="img-portfolio img-responsive" src="dist/img/portfolio-1.jpg">
 
                                 </a>
                             </div>
@@ -202,7 +201,7 @@
                         <div class="col-md-6 project">
                             <div class="portfolio-item">
                                 <a href="#">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                    <img class="img-portfolio img-responsive" src="dist/img/portfolio-2.jpg">
                                 </a>
                             </div>
                         </div>
@@ -266,7 +265,7 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="dist/jquery.min.js"></script>
     <!--<script src="js/jquery-migrate-1.4.1.js"></script>
     <script src="js/jquery-migrate-3.0.0.min.js"></script>
 -->
@@ -274,18 +273,18 @@
 
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <!-- ANIJS animations -->
     <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
 
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="dist/boot/js/bootstrap.min.js"></script>
     <!-- ANIJS -->
-    <script src="js/anijs-min.js"></script>
+    <script src="dist/anijs-min.js"></script>
     <!--<script src="js/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>-->
-    <script src="js/scrollreveal.min.js"></script>
+    <script src="dist/scrollreveal.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script>
@@ -303,9 +302,9 @@
         });
 
 
-        // Scrolls to the selected menu item on the page
+        // Scrolls to the selected menu item on the page  a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])
         $(function() {
-            $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            $('#to-top').click(function() {
                 if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
                     var target = $(this.hash);
                     target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -316,6 +315,8 @@
                         return false;
                     }
                 }
+
+
             });
         });
 

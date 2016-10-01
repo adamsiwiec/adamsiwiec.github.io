@@ -1,0 +1,33 @@
+{
+  "name": "personal",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamSiwiec/adamsiwiec.github.io.git"
+  },
+  "author": "Adam Siwiec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/adamSiwiec/adamsiwiec.github.io/issues"
+  },
+  "homepage": "https://github.com/adamSiwiec/adamsiwiec.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-html-minifier": "^0.1.8",
+    "gulp-image": "^2.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "del": "^2.2.2",
+    "font-awesome": "^4.6.3",
+    "gulp-cssmin": "^0.1.7",
+    "jquery": "^3.1.1",
+    "vinyl-paths": "^2.1.0"
+  }
+}
