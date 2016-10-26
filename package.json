@@ -1,14 +1,15 @@
 {
-  "name": "personal",
+  "name": "portfolio",
   "version": "1.0.0",
   "description": "My personal website",
-  "main": "index.js",
+  "main": "gulp",
   "scripts": {
+    "build": "webpack --optimize-minimize",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adamSiwiec/adamsiwiec.github.io.git"
+    "url": "git+https://github.com/adamSiwiec/adamsiwiec.github.io.git",
+    "type": "git"
   },
   "author": "Adam Siwiec",
   "license": "MIT",
@@ -17,17 +18,23 @@
   },
   "homepage": "https://github.com/adamSiwiec/adamsiwiec.github.io#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.13",
-    "gulp-html-minifier": "^0.1.8",
-    "gulp-image": "^2.7.0"
+    "gulp": "^3.9.1"
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "bootstrap-webpack": "^0.0.5",
+    "css-loader": "^0.25.0",
     "del": "^2.2.2",
     "font-awesome": "^4.6.3",
+    "font-awesome-webpack": "^0.0.4",
     "gulp-cssmin": "^0.1.7",
+    "image-webpack-loader": "^3.0.0",
     "jquery": "^3.1.1",
-    "vinyl-paths": "^2.1.0"
+    "path": "^0.12.7",
+    "scrollreveal": "^3.3.2",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
   }
 }

@@ -9,17 +9,8 @@
     <meta name="description" content="Adam's portfolio website">
     <meta name="author" content="Adam Siwiec">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="dist/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="dist/img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="dist/img/favicon-16x16.png" sizes="16x16">
-    <meta name="theme-color" content="#ffffff">
+
     <title>Adam Siwiec - Full Stack Developer</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="dist/boot/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="dist/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -80,7 +71,7 @@
                 <div class="col-lg-12 text-center myinfo">
                     <img class="center-block img-responsive" src="dist/img/me.jpg">
                     <h2>Hey, I am Adam and I like to program</h2>
-                    <p class="lead">I've created lots of amazing <a href="#portfolio"> things </a>that showcase my work</p>
+                    <p class="lead">I've created lots of amazing <a id = "link" href="#portfolio"> things </a>that showcase my work</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -207,7 +198,7 @@
                         </div>
                     </div>
                     <!-- /.row (nested) -->
-                    <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
+
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -263,100 +254,14 @@
         </div>
         <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
     </footer>
-
-    <!-- jQuery -->
-    <script src="dist/jquery.min.js"></script>
-    <!--<script src="js/jquery-migrate-1.4.1.js"></script>
-    <script src="js/jquery-migrate-3.0.0.min.js"></script>
--->
-
-
-
     <!-- Custom Fonts -->
-    <link href="dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!--<link href="dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <!-- ANIJS animations -->
     <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
 
+    <script src="dist/app.bundle.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="dist/boot/js/bootstrap.min.js"></script>
-    <!-- ANIJS -->
-    <script src="dist/anijs-min.js"></script>
-    <!--<script src="js/helpers/scrollreveal/anijs-helper-scrollreveal-min.js"></script>-->
-    <script src="dist/scrollreveal.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-        // Closes the sidebar menu
-        $("#menu-close").click(function(e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-
-
-        // Opens the sidebar menu
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#sidebar-wrapper").toggleClass("active");
-        });
-
-
-        // Scrolls to the selected menu item on the page  a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])
-        $(function() {
-            $('#to-top').click(function() {
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                    var target = $(this.hash);
-                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                    if (target.length) {
-                        $('html,body').animate({
-                            scrollTop: target.offset().top
-                        }, 1000);
-                        return false;
-                    }
-                }
-
-
-            });
-        });
-
-
-        //#to-top button appears after scrolling
-        var fixed = false;
-        $(document).scroll(function() {
-            if ($(this).scrollTop() > 250) {
-                if (!fixed) {
-                    fixed = true;
-                    // $('#to-top').css({position:'fixed', display:'block'});
-                    $('#to-top').show("slow", function() {
-                        $('#to-top').css({
-                            position: 'fixed',
-                            display: 'block'
-                        });
-                    });
-                }
-            } else {
-                if (fixed) {
-                    fixed = false;
-                    $('#to-top').hide("slow", function() {
-                        $('#to-top').css({
-                            display: 'none'
-                        });
-                    });
-                }
-            }
-        });
-
-
-        // Scroll Reveal
-        window.sr = ScrollReveal();
-        sr.reveal('.myinfo', {
-            duration: 2000
-        });
-        sr.reveal('.project', {
-            duration: 2000
-        });
-    </script>
 
 </body>
 
