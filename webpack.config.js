@@ -16,17 +16,20 @@ module.exports = {
             loaders: ['style', 'css']
         }, {
             test: /\.(jpg|png)$/,
-            loader: 'file',
-            query: {
-                name: 'img/[name].[ext]'
-            }
+            loaders: ['file?name=img/[name].[ext]','image-webpack?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 65}}']
+            //query: {
+            //    name: 'img/[name].[ext]'
+            //}
 
         }, {
             test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
             loader: "url-loader?limit=10000&minetype=application/font-woff"
         }, {
-            test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+            test: /\.(ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
             loader: "file-loader"
+        },{
+            test: /\.svg(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+            loaders: ['file-loader','image-webpack?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 65}}']
         }]
     },
 
@@ -37,10 +40,10 @@ module.exports = {
             "window.jQuery": "jquery"
         }),
 
-        //new webpack.optimize.UglifyJsPlugin({
-    //compress: {
-    //    warnings: false
-    //}
-//})
+        new webpack.optimize.UglifyJsPlugin({
+    compress: {
+        warnings: false
+    }
+})
     ]
 };
