@@ -1,5 +1,5 @@
 var ScrollReveal = require('scrollreveal');
-
+var typed = require('typed.js');
 
 
 
@@ -67,6 +67,25 @@ $(document).scroll(function() {
     }
 });
 
+
+// typed
+
+$(function(){
+        $(".print").typed({
+            strings: ["Full Stack Developer", "Student", "Cross Country Runner", "Musician", "Software Engineer"],
+           // typing speed
+           typeSpeed: 0,
+           // time before typing starts
+           startDelay: 3000,
+           // backspacing speed
+           backSpeed: 0,
+           loop: true,
+           loopCount: false,
+
+           // time before backspacing
+           backDelay: 2000
+        });
+    });
 
 // Scroll Reveal
 window.sr = ScrollReveal();

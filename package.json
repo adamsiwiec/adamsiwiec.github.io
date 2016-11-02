@@ -1,44 +1,43 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "My personal website",
-  "main": "gulp",
-  "scripts": {
-    "build": "webpack --optimize-minimize",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "url": "git+https://github.com/adamSiwiec/adamsiwiec.github.io.git",
-    "type": "git"
-  },
-  "author": "Adam Siwiec",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/adamSiwiec/adamsiwiec.github.io/issues"
-  },
-  "homepage": "https://github.com/adamSiwiec/adamsiwiec.github.io#readme",
-  "devDependencies": {
-    "exports-loader": "^0.6.3",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "gulp": "^3.9.1",
-    "image-webpack-loader": "^3.0.0",
-    "imports-loader": "^0.6.5"
-  },
-  "dependencies": {
-    "bootstrap": "^3.3.7",
-    "bootstrap-webpack": "^0.0.5",
-    "css-loader": "^0.25.0",
-    "del": "^2.2.2",
-    "font-awesome": "^4.6.3",
-    "font-awesome-webpack": "^0.0.4",
-    "gulp-cssmin": "^0.1.7",
-    "image-webpack-loader": "^3.0.0",
-    "jquery": "^3.1.1",
-    "path": "^0.12.7",
-    "scrollreveal": "^3.3.2",
-    "style-loader": "^0.13.1",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.13.2",
-    "webpack-dev-server": "^1.16.2"
-  }
+    "name": "adamsiwiec",
+    "version": "1.0.0",
+    "description": "My personal website",
+    "scripts": {
+        "pack": "webpack --optimize-minimize",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "url": "git+https://github.com/adamSiwiec/adamsiwiec.github.io.git",
+        "type": "git"
+    },
+    "author": "Adam Siwiec",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/adamSiwiec/adamsiwiec.github.io/issues"
+    },
+    "homepage": "https://github.com/adamSiwiec/adamsiwiec.github.io#readme",
+    "devDependencies": {
+        "bootstrap": "^3.3.7",
+        "bootstrap-webpack": "^0.0.5",
+        "css-loader": "^0.25.0",
+        "del": "^2.2.2",
+        "exports-loader": "^0.6.3",
+        "extract-text-webpack-plugin": "^1.0.1",
+        "font-awesome": "^4.6.3",
+        "font-awesome-webpack": "^0.0.4",
+        "image-webpack-loader": "^3.0.0",
+        "imports-loader": "^0.6.5",
+        "jquery": "^3.1.1",
+        "scrollreveal": "^3.3.2",
+        "style-loader": "^0.13.1",
+        "url-loader": "^0.5.7",
+        "webpack": "^1.13.2",
+        "webpack-dev-server": "^1.16.2"
+    },
+    "dependencies": {
+        "compression": "^1.6.2",
+        "express": "^4.14.0",
+        "less": "^2.7.1",
+        "typed.js": "^1.1.1"
+    }
 }
