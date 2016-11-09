@@ -76,7 +76,7 @@ $(function(){
            // typing speed
            typeSpeed: 0,
            // time before typing starts
-           startDelay: 3000,
+           startDelay: 2500,
            // backspacing speed
            backSpeed: 0,
            loop: true,
@@ -94,4 +94,10 @@ sr.reveal('.myinfo', {
 });
 sr.reveal('.project', {
     duration: 2000
+});
+
+$(document).ready(function() {
+    console.log('Made It');
+    debugger;
+    $(".sk-folding-cube").remove();
 });
