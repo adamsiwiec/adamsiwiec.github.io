@@ -131,11 +131,27 @@
                 opacity: 0;
             }
         }
+
+        body {
+            visibility: hidden;
+        }
+
+        .sk-folding-cube {
+            visibility: visible;
+            position: relative;
+            top: 45%;
+        }
     </style>
-    <div class="sk-folding-cube"><div class="sk-cube1 sk-cube"></div><div class="sk-cube2 sk-cube"></div><div class="sk-cube4 sk-cube"></div><div class="sk-cube3 sk-cube"></div></div>
+    <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+    </div>
+
 
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle" data-anijs="if: mouseover, do: pulse animated"><i class="fa fa-bars"></i></a>
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
@@ -163,13 +179,19 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center nameheader">
-            <h1 data-anijs="if: DOMContentLoaded, on: document, do: fadeInDown animated">Adam Siwiec</h1>
-            <!--<h3 data-anijs="if: DOMContentLoaded, on: document, do: fadeInDown animated">Full Stack Developer &amp; Student</h3>-->
+            <h1>Adam Siwiec</h1>
+            <div id="typed-strings" style="visibility: hidden">
+                <p>Full Stack Developer</p>
+                <p>Student</p>
+                <p>Cross Country Runner</p>
+                <p>Musician</p>
+                <p>Software Engineer</p>
+            </div>
             <span class="print"></span>
             <br>
             <br>
-            <a href="#about" class="btn btn-dark btn-lg" data-anijs="if: mouseover, do: pulse animated">About me</a>
-            <a href="https://adamsiwiec.github.io/blog" class="btn btn-dark btn-lg" data-anijs="if: mouseover, do: pulse animated">My Blog</a>
+            <a href="#about" class="btn btn-dark btn-lg">About me</a>
+            <a href="https://adamsiwiec.github.io/blog" class="btn btn-dark btn-lg">My Blog</a>
 
         </div>
     </header>
@@ -200,7 +222,7 @@
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="fa-stack fa-4x" data-anijs="if: mouseover, do: bounce animated">
+                                <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-user fa-stack-1x text-primary"></i>
                             </span>
@@ -213,7 +235,7 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="fa-stack fa-4x" data-anijs="if: mouseover, do: bounce animated">
+                                <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-align-justify fa-stack-1x text-primary"></i>
                             </span>
@@ -226,7 +248,7 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="fa-stack fa-4x" data-anijs="if: mouseover, do: bounce animated">
+                                <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-link fa-stack-1x text-primary"></i>
                             </span>
@@ -239,7 +261,7 @@
                         </div>
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
-                                <span class="fa-stack fa-4x" data-anijs="if: mouseover, do: bounce animated">
+                                <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-mobile fa-stack-1x text-primary"></i>
                             </span>

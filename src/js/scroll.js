@@ -72,7 +72,7 @@ $(document).scroll(function() {
 
 $(function(){
         $(".print").typed({
-            strings: ["Full Stack Developer", "Student", "Cross Country Runner", "Musician", "Software Engineer"],
+            stringsElement: $('#typed-strings'),
            // typing speed
            typeSpeed: 0,
            // time before typing starts
@@ -96,8 +96,10 @@ sr.reveal('.project', {
     duration: 2000
 });
 
-$(document).ready(function() {
-    console.log('Made It');
-    debugger;
+//$(document).ready(function() {
     $(".sk-folding-cube").remove();
-});
+    $("body").css("visibility", "visible");
+
+
+
+//});
