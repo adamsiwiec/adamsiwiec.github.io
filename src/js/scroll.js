@@ -38,12 +38,13 @@ $(function() {
     });
 });
 
-$("#link").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#portfolio").offset().top
-    }, 1000);
-});
 
+$('.scroll').click(function() {
+    var href = $(this).attr('href');
+    $('html, body').animate({
+          scrollTop: $(href).offset().top
+     }, 1000);
+});
 
 //#to-top button appears after scrolling
 var fixed = false;
