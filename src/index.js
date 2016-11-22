@@ -9,8 +9,8 @@ require("bootstrap-webpack");
 // Static
 require('./img/me.jpg');
 require('./img/mow.jpg');
-require('./img/portfolio-1.jpg');
-require('./img/portfolio-2.jpg');
+require('./img/hexagon.jpg');
+require('./img/newsid.jpg');
 require('./img/tag.png');
 
 
