@@ -8,12 +8,11 @@ require("bootstrap-webpack");
 
 // Static
 require('./img/me.jpg');
-require('./img/mow.jpg');
+require('./img/mow.png');
 require('./img/hexagon.jpg');
 require('./img/newsid.jpg');
 require('./img/tag.png');
 
 
 require('./css/main.css');
-
 require('./js/scroll.js');

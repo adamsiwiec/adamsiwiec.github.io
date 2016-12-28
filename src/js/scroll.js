@@ -2,6 +2,7 @@ var ScrollReveal = require('scrollreveal');
 var typed = require('typed.js');
 var fonts = require('google-fonts');
 
+
 fonts.add({
      'Source Sans Pro': ['300','400','700']
 });
@@ -13,7 +14,7 @@ $("#menu-close").click(function(e) {
 });
 
 
-// Opens the sidebar menu
+ //Opens the sidebar menu
 $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#sidebar-wrapper").toggleClass("active");
@@ -120,3 +121,6 @@ $(document).ready(function() {
 
 ga('create', 'UA-62104350-3', 'auto');
 ga('send', 'pageview');
+
+
+$('.angled-border').angledBorder();
