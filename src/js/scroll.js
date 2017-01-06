@@ -121,6 +121,3 @@ $(document).ready(function() {
 
 ga('create', 'UA-62104350-3', 'auto');
 ga('send', 'pageview');
-
-
-$('.angled-border').angledBorder();
