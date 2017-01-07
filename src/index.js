@@ -4,7 +4,7 @@ var $ = require("jquery");
 
 require('bootstrap/dist/css/bootstrap.min.css');
 require("font-awesome-webpack");
-require("bootstrap-webpack");
+//require("bootstrap-webpack");
 
 // Static
 require('./img/me.jpg');
