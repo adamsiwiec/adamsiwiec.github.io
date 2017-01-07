@@ -121,9 +121,3 @@ $(document).ready(function() {
 
 ga('create', 'UA-62104350-3', 'auto');
 ga('send', 'pageview');
-
-
-if (location.protocol != 'https:')
-{
- location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-}
