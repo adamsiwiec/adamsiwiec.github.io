@@ -13,13 +13,10 @@ module.exports = {
     module: {
         loaders: [{
             test: /\.css$/,
-            loaders: ['style', 'css']
+            loaders: ['style-loader', 'css-loader']
         }, {
             test: /\.(jpg|png)$/,
-            loaders: ['file?name=img/[name].[ext]','image-webpack?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 65}}']
-            //query: {
-            //    name: 'img/[name].[ext]'
-            //}
+            loaders: ['file-loader?name=img/[hash].[ext]','image-webpack-loader?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 65}}']
 
         }, {
             test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
@@ -29,7 +26,7 @@ module.exports = {
             loader: "file-loader"
         },{
             test: /\.svg(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-            loaders: ['file-loader','image-webpack?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 65}}']
+            loaders: ['file-loader','image-webpack-loader?{optimizationLevel: 7, interlaced: false, pngquant:{quality: "65-90", speed: 4}, mozjpeg: {quality: 65}}']
         }]
     },
 

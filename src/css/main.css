@@ -267,3 +267,20 @@ footer {
 .print {
     font-size: 30px
 }
+
+
+.glaze {
+    content:url("../img/glaze.png")
+}
+
+.hexagon {
+    content:url("../img/hexagon.jpg")
+}
+
+.tag {
+    content:url("../img/tag.png")
+}
+
+.newsid {
+    content:url("../img/newsid.jpg")
+}
