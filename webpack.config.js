@@ -9,7 +9,7 @@ module.exports = {
     entry: SRC,
     output: {
         publicPath: "dist/",
-        path: './dist',
+        path: path.join(__dirname, 'dist/'),
         filename: 'app.bundle.js'
     },
     module: {
@@ -18,10 +18,21 @@ module.exports = {
             loaders: ['style-loader', 'css-loader']
 
         }, {
-            test: /\.(jpe?g|png|gif|svg)$/i,
+            test: /\.(gif|png|jpe?g|svg)$/i,
             loaders: [
                 'file-loader?hash=sha512&digest=hex&name=[hash].[ext]',
-                'image-webpack-loader?bypassOnDebug&optimizationLevel=7&interlaced=false'
+                {
+                    loader: 'image-webpack-loader',
+                    query: {
+                        progressive: true,
+                        optimizationLevel: 7,
+                        interlaced: false,
+                        pngquant: {
+                            quality: '65-90',
+                            speed: 4
+                        }
+                    }
+                }
             ]
         }, {
             test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
