@@ -4,7 +4,7 @@ My personal portfolio website
 
 ## Getting Started
 Online:
-  [adamsiwiec.github.io](https://adamsiwiec.github.io)
+  [siwiec.us](https://siwiec.us)
   
 Locally:
   Just download the zip, and open index.html in your web browser!

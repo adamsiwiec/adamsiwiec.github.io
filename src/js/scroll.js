@@ -1,5 +1,5 @@
 var ScrollReveal = require('scrollreveal');
-var typed = require('typed.js');
+var Typed = require('typed.js');
 var fonts = require('google-fonts');
 
 
@@ -77,14 +77,14 @@ $(document).scroll(function() {
 // typed
 
 $(function() {
-    $(".print").typed({
-        stringsElement: $('#typed-strings'),
+    var typed = new Typed('.print', {
+        stringsElement: '#typed-strings',
         // typing speed
-        typeSpeed: 0,
+        typeSpeed: 30,
         // time before typing starts
         startDelay: 2500,
         // backspacing speed
-        backSpeed: 0,
+        backSpeed: 30,
         loop: true,
         loopCount: false,
 
