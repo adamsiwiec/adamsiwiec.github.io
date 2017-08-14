@@ -6,7 +6,7 @@ const PurifyCSSPlugin = require('purifycss-webpack');
 var SRC = path.join(__dirname, 'src/');
 
 module.exports = {
-        entry: SRC,
+        entry: ['bootstrap-loader',SRC],
         output: {
             publicPath: "dist/",
             path: path.join(__dirname, 'dist/'),
@@ -15,7 +15,12 @@ module.exports = {
         module: {
             loaders: [{
                     test: /\.css$/,
-                    loaders: ['style-loader', 'css-loader']
+                    loaders: ['style-loader', {
+                        loader: 'css-loader',
+                        options: {
+                            minimize: true
+                        }
+                    }]
 
                 }, {
                     test: /\.(gif|png|jpe?g|svg)$/i,
@@ -48,7 +53,7 @@ module.exports = {
                         loader: "file-loader"
                     }]
             },
-
+            devtool: "source-map",
             plugins: [
 
                 new webpack.ProvidePlugin({
@@ -58,10 +63,18 @@ module.exports = {
                 }),
 
                 new webpack.optimize.UglifyJsPlugin({
+                    sourceMap: true,
                     compress: {
                         warnings: false
                     }
                 }),
+                new webpack.LoaderOptionsPlugin({
+  options: {
+    context: path.resolve(__dirname, '.'),
+    output: {
+      path: 'dist',
+    },
+      }}),
 
                 new PurifyCSSPlugin({
                     // Give paths to parse for rules. These should be absolute!
@@ -69,3 +82,8 @@ module.exports = {
                 })
             ]
         };
+
+
+
+
+
