@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+//if (!(window.location.host.startsWith("127.0.0.1") || window.location.host.startsWith("localhost")) && (window.location.protocol != "https:"))
+//    window.location.protocol = "https";
+</script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Adam's portfolio website">
+    <meta name="author" content="Adam Siwiec">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <title>Adam Siwiec - Full Stack Developer</title>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body style = "visibility: hidden">
+          <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle toggle-button"><i class="fa fa-bars"></i></a>
+    <!-- Navigation -->
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$( "#menu-close").click();>Adam Siwiec</a>
+            </li>
+            <li>
+                <a href="#about" class="scroll" onclick=$( "#menu-close").click();>About</a>
+            </li>
+            <li>
+                <a href="https://adamsiwiec.github.io/blog" onclick=$( "#menu-close").click();>Blog</a>
+            </li>
+            <li>
+                <a href="#services" class="scroll" onclick=$( "#menu-close").click();>What I Do</a>
+            </li>
+            <li>
+                <a href="#portfolio" class="scroll" onclick=$( "#menu-close").click();>Projects</a>
+            </li>
+            <li>
+                <a href="#contact"  class="scroll" onclick=$( "#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center nameheader">
+            <h1>Adam Siwiec</h1>
+            <div id="typed-strings" style="visibility: hidden">
+                <p>Full Stack Developer</p>
+                <p>Student</p>
+                <p>Cross Country Runner</p>
+                <p>Musician</p>
+                <p>Software Engineer</p>
+            </div>
+            <span class="print"></span>
+            <br>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg scroll">About me</a>
+            <!-- <a href="https://adamsiwiec.github.io/blog" class="btn btn-dark btn-lg">My Blog</a> -->
+
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center myinfo">
+                    <img class="center-block img-responsive mb-3 me">
+                    <h2>Hey, I am Adam and I like to program</h2>
+                    <p class="lead mt-1">I've created lots of amazing <a id="link" class="scroll" href="#portfolio"> things </a>that showcase my work</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary"  data-directon="ltr">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>What I do</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-user fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Dynamic Web Apps</strong>
+                                </h4>
+                                <p>REST API, Databases, Login </p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-align-justify fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Static Sites</strong>
+                                </h4>
+                                <p>Portfolios, Business </p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-link fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Realtime</strong>
+                                </h4>
+                                <p>Chat, Analytics</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-mobile fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Mobile Apps</strong>
+                                </h4>
+                                <p>Native Applications, Web Apps</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio" data-directon="ltr">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>My Projects</h2>
+                    <hr class="small">
+                    <div class="row">
+
+                        <div class="col-md-6 project">
+                            <div class="portfolio-item">
+
+                                <a href="https://github.com/adamsiwiec/glaze">
+                                    <img class="img-portfolio img-responsive glaze">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 project">
+                            <div class="portfolio-item">
+                                <a href="https://tagyourit.herokuapp.com">
+                                    <img class="img-portfolio img-responsive tag">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 project">
+                            <div class="portfolio-item">
+                                <a href="https://newsid.herokuapp.com">
+                                    <img class="img-portfolio img-responsive newsid">
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 project">
+                            <div class="portfolio-item">
+                                <a href="https://github.com/adamsiwiec/hexagon">
+                                    <img class="img-portfolio img-responsive hexagon">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- Footer -->
+    <footer id = "contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4 class="text-center"><strong>Adam Siwiec</strong>
+                    </h4>
+                    <p class="text-center">AR, USA</p>
+                    <ul class="list-unstyled">
+                        <li class="text-center"><i class="fa fa-phone fa-fw"></i> 4796442578</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:adamsiwiec01@gmail.com">adamsiwiec01@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://github.com/adamsiwiec"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/asiwiec1"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Adam Siwiec 2017</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+    <script async src="dist/app.bundle.js"></script>
+</body>
+</html>
